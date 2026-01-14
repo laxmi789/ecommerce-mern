@@ -18,7 +18,7 @@ app.use(cookieParser())
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://shoppingclub.vercel.app",
     credentials: true
   })
 )
