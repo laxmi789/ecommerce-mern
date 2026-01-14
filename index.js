@@ -28,10 +28,10 @@ app.use('/api',userRouter)
 app.use('/api', cartRouter)
 app.use('/api', productRouter)
 app.use('/api', order)
-app.use("/uploads", express.static("uploads"));
+app.use("/uploads", express.static("uploads"))
 
 
-mongoose.connect(process.env.MONGODB_URL).then(() => {
+mongoose.connect(process.env.MONGO_URI).then(() => {
     console.log('mongodb connected')
 app.listen(process.env.PORT, () => {
 console.log(`server is running on port ${process.env.PORT}`)
