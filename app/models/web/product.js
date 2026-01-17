@@ -20,7 +20,6 @@ price:{
 }, 
 mainImage:{
     type:String,
-    required:true
 },
 
 images:{
